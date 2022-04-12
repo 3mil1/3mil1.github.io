@@ -1,32 +1,58 @@
 import {GetDivUsers, GetSkills, GetUser, GetXp} from './queries.js'
+import {ChartCircle, ChartStudentsRating} from "./charts.js";
+import {Spinner} from "./spinner.js";
+
+const substrings = ['skill_front-end', 'skill_back-end', 'skill_game', 'skill_sys-admin', 'skill_algo', 'skill_stats']
+let techSkills
+let technologies
+let skills
+
+let input = document.getElementsByTagName('input')
+
+let timerId
+let debounceFunction = function (func, delay) {
+    clearTimeout(timerId)
+    timerId = setTimeout(func, delay)
+}
+input[0].addEventListener('input', function () {
+    debounceFunction(() => userData(input[0].value), 500)
+})
 
 
-// let skills = new GetSkills("3mil")
-// console.log(await skills.skillsArr())
-//
-//
-// let user = new GetUser("3mil")
-// console.log(await user.getUserInfo())
-//
-let xp = new GetXp("AaEnnDeeErrEeEss")
-console.log(await xp.getXp())
+let techSkillsChart = new ChartCircle()
+let technologiesChart = new ChartCircle()
+
+const userData = async (inputValue = '3mil') => {
+    let user = await new GetUser(inputValue).getUserInfo()
+    document.getElementById('userLogin').textContent = 'User login: ' + user.login
+    document.getElementById('userId').textContent = 'User id: ' + user.id
+    skills = await new GetSkills(inputValue).skillsArr()
+    let xp = await new GetXp(inputValue).getXp()
+    let cards = document.getElementsByTagName('h2')
+    for (let i = 0; i < cards.length; i++) {
+        cards.item(i).textContent = `${Object.entries(xp)[i][0]}: 
+        ${Object.entries(xp)[i][1].xp}xp `
+        cards.item(i).textContent += `${Object.entries(xp)[i][1].done ? 'amount:' + Object.entries(xp)[i][1].done : ""}`
+        cards.item(i).textContent += `${Object.entries(xp)[i][1].received ? 'amount:' + Object.entries(xp)[i][1].received : ""}`
+    }
 
 
-// let maxXp = 0
-// let minXp = 100
-//
-// let allUsers = new GetDivUsers()
-// let data = await allUsers.getUsers()
-// for (const el of data) {
-//     let xp = await new GetXp(el.login).getXp()
-//     if (minXp > await xp.div_01.xp) {
-//         minXp = xp.div_01.xp
-//     }
-//     if (maxXp < await xp.div_01.xp) {
-//         maxXp = xp.div_01.xp
-//     }
-//     // console.log({login: el.login, data: await xp})
-// }
-//
-// console.log(maxXp)
-// console.log(minXp)
+    techSkills = skills.filter(s => substrings.some(e => s.type.includes(e)))
+    technologies = skills.filter(s => !substrings.some(e => s.type.includes(e)))
+    techSkillsChart.calculate(techSkills)
+    technologiesChart.calculate(technologies)
+}
+
+userData()
+
+export let spinner = new Spinner()
+let usersWithXp = await new GetDivUsers().getUsersWithXp()
+new ChartStudentsRating(usersWithXp, "div_01")
+new ChartStudentsRating(usersWithXp, "go_piscine")
+new ChartStudentsRating(usersWithXp, "js_piscine")
+new ChartStudentsRating(usersWithXp, "AuditsDone")
+new ChartStudentsRating(usersWithXp, "AuditsReceived")
+
+
+
+

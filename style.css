@@ -1,0 +1,105 @@
+:root {
+    --cardWidth: 240px;
+    --cardHeight: 280px;
+    --cardMargin: 5px;
+}
+
+.rating {
+    width: 550px;
+    height: 400px;
+    overflow: scroll;
+}
+
+.circleChart {
+    width: 400px;
+    height: 400px;
+}
+
+.card {
+    width: var(--cardWidth);
+    margin: var(--cardMargin);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #000000 no-repeat center;
+    background-size: cover;
+}
+
+.card div {
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+}
+
+#spinner {
+    animation: rotator 1.4s linear infinite;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes rotator {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+.path {
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+@keyframes colors {
+    0% {
+        stroke: #4285f4;
+    }
+    25% {
+        stroke: #de3e35;
+    }
+    50% {
+        stroke: #f7c223;
+    }
+    75% {
+        stroke: #1b9a59;
+    }
+    100% {
+        stroke: #4285f4;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+        transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 187;
+        transform: rotate(450deg);
+    }
+}
+
+#circleContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#studentsRatingContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bar:hover {
+    fill: red !important;
+}

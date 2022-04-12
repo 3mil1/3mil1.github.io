@@ -1,3 +1,5 @@
+import {spinner} from "./index.js";
+
 class fetchGraphQl {
     url = "https://01.kood.tech/api/graphql-engine/v1/graphql"
 
@@ -108,7 +110,6 @@ export class GetSkills {
     }
 }
 
-
 export class GetXp {
     _arr = []
     _recursCall = 0
@@ -156,8 +157,16 @@ export class GetXp {
                     }
                 }
 
-                if (el.path.includes("piscine-js")) {
-                    piscine_js[el.path] = {byte: el.amount, date: el.createdAt, task: el.object.name}
+                if (el.path.includes("piscine-js/") || el.path.includes("piscine-js-2/")) {
+                    if (el.path.includes("piscine-js-2/")) {
+                        piscine_js[el.path.replace('piscine-js-2/', 'piscine-js/')] = {
+                            byte: el.amount,
+                            date: el.createdAt,
+                            task: el.object.name
+                        }
+                    } else {
+                        piscine_js[el.path] = {byte: el.amount, date: el.createdAt, task: el.object.name}
+                    }
                 }
                 if (el.path.includes("piscine-go")) {
                     piscine_go[el.path] = {byte: el.amount, date: el.createdAt, task: el.object.name}
@@ -180,13 +189,25 @@ export class GetXp {
             goPiscineXp += el.byte / 1000
         })
 
+        let DivProjectExists = Object.keys(div_01).length > 0;
+        let JsProjectExists = Object.keys(piscine_js).length > 0;
 
         return {
             AuditsReceived: {xp: Math.round(receivedXp / 1000), received},
             AuditsDone: {xp: Math.round(doneXp / 1000), done},
             // 70kb for JsPiscine
-            div_01: {xp: Math.round(divXp + 70), projects: div_01},
-            js_piscine: {xp: Math.round(jsPiscineXp - 70), projects: piscine_js},
+            ...(DivProjectExists) ? {
+                div_01: {
+                    xp: Math.round(divXp > 70 && divXp + 70),
+                    projects: div_01
+                }
+            } : {div_01: {xp: 0, projects: null}},
+            ...(JsProjectExists) ? {
+                js_piscine: {
+                    xp: Math.round(jsPiscineXp),
+                    projects: piscine_js
+                }
+            } : {js_piscine: {xp: 0, projects: null}},
             go_piscine: {xp: Math.round(goPiscineXp), projects: piscine_go}
         }
     }
@@ -245,6 +266,21 @@ export class GetDivUsers {
         return await this.init()
     }
 
+    async getUsersWithXp() {
+        let data = []
+
+        let allUsers = await this.getUsers()
+
+        spinner.show()
+        for (const el of allUsers) {
+            let xp = await new GetXp(el.login).getXp()
+            data.push({login: el.login, data: xp})
+        }
+        spinner.hide()
+
+        return {usersLen: allUsers.length, data}
+    }
+
     async init() {
         return new Promise(async (resolve, reject) => {
             let all = async () => {
@@ -280,6 +316,7 @@ query getUsers($limit: Int, $offset: Int) {
 }
     `
 }
+
 
 
 
