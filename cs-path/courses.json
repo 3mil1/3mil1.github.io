@@ -1,19 +1,940 @@
 [
-  {"id":"mit-6042","school":"MIT","code":"6.042J","name":"Mathematics for Computer Science","edition":"Spring 2015","modules":[1,2,7],"role":"Начать здесь","priority":"core","format":"Видео + задачи","description":"Логика, доказательства, индукция, множества, графы и комбинаторика. Математический спутник первых модулей UT и подготовка к алгоритмам.","use":"Выбирай раздел по текущей теме UT. Если основы логики уже уверенные, переходи к доказательствам и индукции.","prereq":"Для полного курса MIT указывает single-variable calculus. Начальные разделы логики можно брать отдельно.","limit":"Решения домашних problem sets публично закрыты. Кнопки обратной связи в OLL не тестировались.","links":[["Курс","https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/"],["Учебник","https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/pages/readings/"],["Первое задание · PS1","https://openlearninglibrary.mit.edu/assets/courseware/v1/432a6320bb11c2bfba8ed2a47e68f86d/asset-v1:OCW+6.042J+2T2019+type@asset+block/MIT6_042JS15_ps1.pdf"]]},
-  {"id":"cmu-17214","school":"CMU","code":"17-214","name":"Principles of Software Construction","edition":"Spring 2023","modules":[2,4,8],"role":"Следующий шаг","priority":"core","format":"Слайды + примеры","description":"Контракты, тестирование, объектное проектирование, распределение ответственности, рефакторинг и API. Связывай темы со своим проектом UT.","use":"Начни с OO basics, Specifications and Unit Testing, Test Case Design. Весь курс проходи после уверенного программирования.","prereq":"Уровень двух семестров программирования, базовые структуры данных и инварианты. Примеры на Java и JavaScript/TypeScript.","limit":"Открыты слайды. Внешний доступ к полному workflow домашних заданий не установлен. Этот выпуск отличается от Agentic Software Development 2026 года.","links":[["Курс и порядок тем","https://cmu-17-214.github.io/s2023/"],["Спецификации и тесты","https://cmu-17-214.github.io/s2023/slides/04-specifications%26unit-testing-exceptions.pdf"]]},
-  {"id":"mit-1801","school":"MIT","code":"18.01SC","name":"Single Variable Calculus","edition":"Fall 2010","modules":[3],"role":"Во время M3","priority":"core","format":"Видео + задачи + решения","description":"Пределы, производные, интегралы и ряды. Есть лекции, разборы задач и опубликованные решения для самостоятельной проверки.","use":"Проходи те же темы, что на Calculus в UT. Не нужно ждать завершения всего курса, чтобы решать свои университетские задачи.","prereq":"Школьная алгебра и тригонометрия.","limit":"Это анализ функций одной переменной. Старые интерактивные mathlets не запускались.","links":[["Курс","https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/"],["Первое занятие","https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/1.-differentiation/part-a-definition-and-basic-rules/session-1-introduction-to-derivatives/"]]},
-  {"id":"mit-6033","school":"MIT","code":"6.033","name":"Computer System Engineering","edition":"Spring 2018","modules":[3,4,5,8],"role":"Выбранные разделы","priority":"core","format":"Конспекты + письменные задания","description":"Сетевые и системные абстракции, ОС, безопасность и архитектурные компромиссы. Для M3 полезны Networking I–III и задание о DNS.","use":"Сетевые главы используй как дополнительное объяснение. Позже возвращайся к разделам об ОС и design project.","prereq":"Для полного курса нужны архитектура компьютеров и уверенное программирование.","limit":"Покрывает вводные сети частично; лабораторные и расчёты UT остаются основой. Серия видеолекций этого выпуска не обнаружена.","links":[["Курс","https://ocw.mit.edu/courses/6-033-computer-system-engineering-spring-2018/"],["Сетевая архитектура","https://ocw.mit.edu/courses/6-033-computer-system-engineering-spring-2018/pages/week-5/lecture-8-outline/"],["DNS assignment","https://ocw.mit.edu/courses/6-033-computer-system-engineering-spring-2018/pages/week-2/domain-name-system-dns-assignment/"]]},
-  {"id":"mit-6041","school":"MIT","code":"6.041SC","name":"Probabilistic Systems Analysis","edition":"Fall 2013","modules":[4,6],"role":"Вероятность → статистика","priority":"core","format":"Видео + задачи + решения","description":"Вероятностные модели, условная вероятность, случайные величины. Позднее — оценивание и проверка гипотез для статистики M6.","use":"Начни с дискретных моделей и условной вероятности. К Unit IV переходи после вероятностной базы.","prereq":"Для полного курса нужен calculus, включая многомерное интегрирование. Начальные дискретные темы доступны раньше.","limit":"Наличие статистического блока не подтверждает полное совпадение с практикумом UT.","links":[["Курс","https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"],["Первое занятие","https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/pages/unit-i/lecture-1/"],["Задачи PS1","https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/resources/mit6_041scf13_assn01/"]]},
-  {"id":"cmu-15445","school":"CMU","code":"15-445","name":"Introduction to Database Systems","edition":"Fall 2025","modules":[4,8],"role":"Сначала SQL","priority":"core","format":"Видео + задания","description":"Реляционная модель, SQL, индексы, транзакции и устройство СУБД. На первом курсе начни с лекций 1–2 и SQL homework.","use":"После лекций о реляционной модели и SQL выполни Homework 1 на DuckDB. Проекты движка BusTub на C++ оставь на более поздний этап.","prereq":"Для выбранных первых тем — основы программирования. Для полного курса и проектов нужны структуры данных и системное программирование.","limit":"На сайте опубликованы ссылки на решения домашних работ. Среда, датасет и автопроверка в этой проверке не запускались.","links":[["Лекции и материалы","https://15445.courses.cs.cmu.edu/fall2025/schedule.html"],["SQL homework","https://15445.courses.cs.cmu.edu/fall2025/homework1/"],["Задания и решения","https://15445.courses.cs.cmu.edu/fall2025/assignments.html"]]},
-  {"id":"mit-6004","school":"MIT","code":"6.004","name":"Computation Structures","edition":"Spring 2017","modules":[5],"role":"Архитектура","priority":"core","format":"Видео + worksheets + ответы","description":"От цифровой логики и автоматов к инструкциям процессора, памяти и кэшам. Помогает связать hardware и выполнение программы.","use":"Сопоставляй главы с Computer Architecture and Organisation в M5. Решай worksheets после каждого раздела.","prereq":"Базовое программирование; формальный prerequisite MIT — 8.02.","limit":"Учебная архитектура Beta. Все лабораторные среды и симуляторы не проверены запуском.","links":[["Курс","https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"],["Первая тема","https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c1/c1s1/"]]},
-  {"id":"mit-1806","school":"MIT","code":"18.06SC","name":"Linear Algebra","edition":"Fall 2011 · Gilbert Strang","modules":[5],"role":"Математика для систем и ML","priority":"core","format":"Видео + задачи + решения","description":"Системы уравнений, пространства, базисы, проекции и собственные значения. Лекции Strang дополняются задачами и разборами.","use":"После каждого занятия решай связанные упражнения. Пытайся объяснять геометрический смысл матричных операций.","prereq":"Школьная алгебра, векторы и координаты. Calculus не нужен для начала изучения линейной алгебры.","limit":"Линейная алгебра не заменяет курс абстрактной алгебры групп и полей.","links":[["Курс","https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/"],["Геометрия систем уравнений","https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/ax-b-and-the-four-subspaces/the-geometry-of-linear-equations/"]]},
-  {"id":"cmu-15213","school":"CMU","code":"15-213","name":"Introduction to Computer Systems","edition":"Course site + CS:APP self-study","modules":[5,8],"role":"После C и указателей","priority":"core","format":"Материалы + self-study labs","description":"Программистский взгляд на машинный код, память, процессы, I/O и параллелизм. Практика помогает понять, что происходит под кодом.","use":"Бери после C и уверенной работы с указателями. Начни с представления данных, затем переходи к машинному коду и памяти.","prereq":"C, указатели и базовые структуры данных. Официальный prerequisite — 15-122.","limit":"Часть лабораторных требует Linux/x86-64; Cache Lab прямо требует x86-64. Готовые решения labs предоставляются преподавателям. Это не полный курс реализации ядра ОС.","links":[["Курс","https://www.cs.cmu.edu/~213/"],["Self-study labs","https://csapp.cs.cmu.edu/3e/labs.html"]]},
-  {"id":"mit-6036","school":"MIT","code":"6.036","name":"Introduction to Machine Learning","edition":"Fall 2020","modules":[6],"role":"После математической базы","priority":"core","format":"Видео + текст · OLL","description":"Постановка ML-задач, обобщение, линейные модели, нейросети и reinforcement learning.","use":"Начинай после Python, линейной алгебры и calculus. Проверяй понимание на задачах, а не только по просмотрам.","prereq":"Python, calculus и linear algebra. Вероятность помогает понимать оценку моделей.","limit":"Проверенные Homework 1 и self-assessment требуют входа и enrolment. Доступность заданий и автопроверки после входа не подтверждена. Классический AI покрыт не целиком.","links":[["Курс","https://ocw.mit.edu/courses/6-036-introduction-to-machine-learning-fall-2020/"],["Самостоятельная версия","https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/about"]]},
-  {"id":"mit-6813","school":"MIT","code":"6.813 / 6.831","name":"User Interface Design and Implementation","edition":"Spring 2011","modules":[6,8,11],"role":"Бакалаврская ветка 6.813","priority":"core","format":"Конспекты + проект","description":"Usability, анализ задач, прототипы и пользовательское тестирование. Подходит к UX и проектированию интерактивных систем UT.","use":"Начни с HW1: сравни хороший и плохой интерфейс. Для проекта используй этапы GR1–GR6.","prereq":"Для полного курса MIT указывает Software Construction. Анализ интерфейса можно делать до реализации.","limit":"Видео в этом выпуске нет. Решения HW/PS не обнаружены. Старые заготовки интерфейсов могут требовать обновления.","links":[["Курс","https://ocw.mit.edu/courses/6-831-user-interface-design-and-implementation-spring-2011/"],["Этапы проекта","https://ocw.mit.edu/courses/6-831-user-interface-design-and-implementation-spring-2011/pages/projects/"]]},
-  {"id":"mit-6006","school":"MIT","code":"6.006","name":"Introduction to Algorithms","edition":"Fall 2011","modules":[7],"role":"После дискретной математики","priority":"core","format":"Видео + задачи + решения","description":"Сортировки, хеширование, деревья, графы, кратчайшие пути и динамическое программирование. Сильное дополнение к алгоритмам M7.","use":"Разбирай корректность и сложность до программирования. Начальная тема — Peak Finding; затем PS1.","prereq":"Уверенное программирование на Python и дискретная математика уровня 6.042J.","limit":"Программные стартеры этого выпуска используют Python 2.7. Совместимость с современным Python не проверена. Курс не заменяет формальные языки и вычислимость.","links":[["Курс","https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"],["Задания и решения","https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/pages/assignments/"]]},
-  {"id":"mit-60001","school":"MIT","code":"6.0001","name":"Introduction to CS and Programming in Python","edition":"Fall 2016","modules":[1,2],"role":"Если нужна база программирования","priority":"reserve","format":"Видео + задачи","description":"Функции, циклы, рекурсия, коллекции, классы и первые оценки сложности. Используй для конкретных пробелов.","use":"Если базовые конструкции уже уверенные, пропусти. Для практики на состояние и цикл подходит PS1: House Hunting.","prereq":"Можно начинать без опыта программирования.","limit":"Python может отличаться от языка UT. Решений домашних работ нет; старые инструкции установки не проверены.","links":[["Курс","https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/"],["Задания","https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/pages/assignments/"]]},
-  {"id":"cmu-15110","school":"CMU","code":"15-110","name":"Principles of Computing","edition":"CS Learn · запуск ноябрь 2026","modules":[1,2],"role":"Вводный резерв","priority":"reserve","format":"Новые видеолекции","description":"Вводный курс вычислений и программирования. Полезен для повторения конкретной базовой темы.","use":"Выбирай вместо вводного MIT 6.0001, если объяснение CMU подходит лучше. Проходить оба целиком не требуется.","prereq":"Подходит для начала изучения программирования.","limit":"CMU Learn помечает курс Watch now. Полнота плейлиста и новая самостоятельная платформа с заданиями не подтверждены.","links":[["CMU Learn","https://www.cs.cmu.edu/learn/"]]},
-  {"id":"mit-6031","school":"MIT","code":"6.031","name":"Software Construction","edition":"Spring 2022 · TypeScript","modules":[2,4,8],"role":"Альтернатива CMU 17-214","priority":"reserve","format":"Чтение + упражнения","description":"Спецификации, тестирование, абстрактные типы данных, инварианты, интерфейсы и параллелизм.","use":"Выбирай как основной ресурс вместо 17-214, если подходит TypeScript и текстовый формат. Первое чтение — Testing.","prereq":"Уверенное программирование; MIT требует подготовку уровня 6.009.","limit":"Серия видеолекций не обнаружена. Получение исходной заготовки PS1 связано с Didit и MIT GitHub; внешний workflow не подтверждён.","links":[["Курс","https://web.mit.edu/6.031/www/sp22/"],["Testing","https://web.mit.edu/6.031/www/sp22/classes/03-testing/"],["PS1: Flashcards","https://web.mit.edu/6.031/www/sp22/psets/ps1/"]]},
-  {"id":"mit-6830","school":"MIT","code":"6.830 / 6.814","name":"Database Systems","edition":"Fall 2010 · SimpleDB / Java","modules":[4,8],"role":"Углубление позже","priority":"reserve","format":"Конспекты + лабораторные","description":"Устройство СУБД и реализация частей SimpleDB на Java. Выбирай после систем и алгоритмов.","use":"Для вводного M4 предпочтительнее первые темы CMU 15-445. Сюда возвращайся ради Java-проекта движка.","prereq":"Подготовка уровня MIT 6.033 и 6.006, Java.","limit":"Видео нет; конспекты выборочные; комплект problem sets неполон. Сборка старых архивов не проверена.","links":[["Курс","https://ocw.mit.edu/courses/6-830-database-systems-fall-2010/"],["Задания","https://ocw.mit.edu/courses/6-830-database-systems-fall-2010/pages/assignments/"]]},
-  {"id":"mit-6045","school":"MIT","code":"6.045J","name":"Automata, Computability, and Complexity","edition":"Spring 2011","modules":[7],"role":"Отдельная теория вычислений","priority":"reserve","format":"Теоретический курс","description":"Конечные автоматы, машины Тьюринга, вычислимость, сводимости и сложность. Ориентир для Languages and Machines.","use":"Сверь темы с UT: этот блок не заменяется алгоритмами 6.006 или прикладными парсерами 6.031.","prereq":"Дискретная математика и уверенное чтение доказательств.","limit":"Содержание курса проверено; полный аудит его заданий и решений не проводился.","links":[["Курс","https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/"]]}
+  {
+    "id": "mit-6042",
+    "school": "MIT",
+    "code": "6.042J",
+    "name": "Mathematics for Computer Science",
+    "edition": "Spring 2015",
+    "modules": [
+      1,
+      2,
+      7
+    ],
+    "role": "Начать здесь",
+    "priority": "core",
+    "format": "Видео + задачи",
+    "description": "Логика, доказательства, индукция, множества, графы и комбинаторика. Математический спутник первых модулей UT и подготовка к алгоритмам.",
+    "use": "Выбирай раздел по текущей теме UT. Если основы логики уже уверенные, переходи к доказательствам и индукции.",
+    "prereq": "Для полного курса MIT указывает single-variable calculus. Начальные разделы логики можно брать отдельно.",
+    "limit": "Решения домашних problem sets публично закрыты. Кнопки обратной связи в OLL не тестировались.",
+    "links": [
+      [
+        "Курс",
+        "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/"
+      ],
+      [
+        "Учебник",
+        "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/pages/readings/"
+      ],
+      [
+        "Первое задание · PS1",
+        "https://openlearninglibrary.mit.edu/assets/courseware/v1/432a6320bb11c2bfba8ed2a47e68f86d/asset-v1:OCW+6.042J+2T2019+type@asset+block/MIT6_042JS15_ps1.pdf"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "Start here",
+        "format": "Videos + problems",
+        "description": "Logic, proofs, induction, sets, graphs and counting. A mathematics companion for the first UT modules and a foundation for algorithms.",
+        "use": "Choose the section that matches your current UT topic. If basic logic is already comfortable, move on to proofs and induction.",
+        "prereq": "MIT lists single-variable calculus as a prerequisite for the full course. The introductory logic sections can be studied separately.",
+        "limit": "Homework problem-set solutions are not public. The feedback buttons in OLL have not been tested.",
+        "linkLabels": [
+          "Course",
+          "Textbook",
+          "First assignment · PS1"
+        ]
+      },
+      "et": {
+        "role": "Alusta siit",
+        "format": "Videod + ülesanded",
+        "description": "Loogika, tõestused, induktsioon, hulgad, graafid ja kombinatoorika. Täiendab UT esimesi matemaatikamooduleid ning loob aluse algoritmidele.",
+        "use": "Vali jaotis UT praeguse teema järgi. Kui loogika alused on selged, liigu tõestuste ja induktsiooni juurde.",
+        "prereq": "Tervikkursuse eeldus on MIT järgi ühe muutuja matemaatiline analüüs. Loogika sissejuhatavaid osi saab õppida eraldi.",
+        "limit": "Koduste ülesandekomplektide lahendused ei ole avalikud. OLL-i tagasisidenuppe ei ole katsetatud.",
+        "linkLabels": [
+          "Kursus",
+          "Õpik",
+          "Esimene ülesanne · PS1"
+        ]
+      }
+    }
+  },
+  {
+    "id": "cmu-17214",
+    "school": "CMU",
+    "code": "17-214",
+    "name": "Principles of Software Construction",
+    "edition": "Spring 2023",
+    "modules": [
+      2,
+      4,
+      8
+    ],
+    "role": "Следующий шаг",
+    "priority": "core",
+    "format": "Слайды + примеры",
+    "description": "Контракты, тестирование, объектное проектирование, распределение ответственности, рефакторинг и API. Связывай темы со своим проектом UT.",
+    "use": "Начни с OO basics, Specifications and Unit Testing, Test Case Design. Весь курс проходи после уверенного программирования.",
+    "prereq": "Уровень двух семестров программирования, базовые структуры данных и инварианты. Примеры на Java и JavaScript/TypeScript.",
+    "limit": "Открыты слайды. Внешний доступ к полному workflow домашних заданий не установлен. Этот выпуск отличается от Agentic Software Development 2026 года.",
+    "links": [
+      [
+        "Курс и порядок тем",
+        "https://cmu-17-214.github.io/s2023/"
+      ],
+      [
+        "Спецификации и тесты",
+        "https://cmu-17-214.github.io/s2023/slides/04-specifications%26unit-testing-exceptions.pdf"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "Next step",
+        "format": "Slides + examples",
+        "description": "Specifications, testing, object-oriented design, responsibility assignment, refactoring and APIs. Connect each topic to your UT project.",
+        "use": "Start with OO basics, Specifications and Unit Testing, and Test Case Design. Take the full course once you are confident in programming.",
+        "prereq": "Roughly two semesters of programming, basic data structures and invariants. Examples use Java and JavaScript/TypeScript.",
+        "limit": "Slides are public. External access to the complete assignment workflow is unverified. This edition differs from Agentic Software Development in 2026.",
+        "linkLabels": [
+          "Course and topic order",
+          "Specifications and tests"
+        ]
+      },
+      "et": {
+        "role": "Järgmine samm",
+        "format": "Slaidid + näited",
+        "description": "Spetsifikatsioonid, testimine, objektorienteeritud disain, vastutuse jaotus, refaktoreerimine ja API-d. Seo teemad oma UT projektiga.",
+        "use": "Alusta teemadest OO basics, Specifications and Unit Testing ning Test Case Design. Võta tervikkursus ette siis, kui programmeerid juba kindlalt.",
+        "prereq": "Ligikaudu kahe semestri programmeerimiskogemus, põhilised andmestruktuurid ja invariandid. Näited on Javas ja JavaScriptis/TypeScriptis.",
+        "limit": "Slaidid on avalikud. Täielik ligipääs kodutööde töövoole väljastpoolt CMU-d pole kinnitatud. See versioon erineb 2026. aasta kursusest Agentic Software Development.",
+        "linkLabels": [
+          "Kursus ja teemade järjekord",
+          "Spetsifikatsioonid ja testid"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mit-1801",
+    "school": "MIT",
+    "code": "18.01SC",
+    "name": "Single Variable Calculus",
+    "edition": "Fall 2010",
+    "modules": [
+      3
+    ],
+    "role": "Во время M3",
+    "priority": "core",
+    "format": "Видео + задачи + решения",
+    "description": "Пределы, производные, интегралы и ряды. Есть лекции, разборы задач и опубликованные решения для самостоятельной проверки.",
+    "use": "Проходи те же темы, что на Calculus в UT. Не нужно ждать завершения всего курса, чтобы решать свои университетские задачи.",
+    "prereq": "Школьная алгебра и тригонометрия.",
+    "limit": "Это анализ функций одной переменной. Старые интерактивные mathlets не запускались.",
+    "links": [
+      [
+        "Курс",
+        "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/"
+      ],
+      [
+        "Первое занятие",
+        "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/1.-differentiation/part-a-definition-and-basic-rules/session-1-introduction-to-derivatives/"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "During M3",
+        "format": "Videos + problems + solutions",
+        "description": "Limits, derivatives, integrals and series. Includes lectures, worked problems and published solutions for self-checking.",
+        "use": "Follow the same topics as Calculus at UT. You can use individual sections immediately for your university exercises.",
+        "prereq": "School algebra and trigonometry.",
+        "limit": "Covers functions of one variable. The older interactive mathlets have not been run.",
+        "linkLabels": [
+          "Course",
+          "First session"
+        ]
+      },
+      "et": {
+        "role": "M3 ajal",
+        "format": "Videod + ülesanded + lahendused",
+        "description": "Piirväärtused, tuletised, integraalid ja read. Sisaldab loenguid, näidisülesandeid ning avalikke lahendusi enesekontrolliks.",
+        "use": "Järgi samu teemasid nagu UT analüüsikursusel. Üksikuid jaotisi saad kohe kasutada ülikooli ülesannete lahendamisel.",
+        "prereq": "Koolialgebra ja trigonomeetria.",
+        "limit": "Käsitleb ühe muutuja funktsioone. Vanu interaktiivseid rakendusi ei ole käivitatud.",
+        "linkLabels": [
+          "Kursus",
+          "Esimene tund"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mit-6033",
+    "school": "MIT",
+    "code": "6.033",
+    "name": "Computer System Engineering",
+    "edition": "Spring 2018",
+    "modules": [
+      3,
+      4,
+      5,
+      8
+    ],
+    "role": "Выбранные разделы",
+    "priority": "core",
+    "format": "Конспекты + письменные задания",
+    "description": "Сетевые и системные абстракции, ОС, безопасность и архитектурные компромиссы. Для M3 полезны Networking I–III и задание о DNS.",
+    "use": "Сетевые главы используй как дополнительное объяснение. Позже возвращайся к разделам об ОС и design project.",
+    "prereq": "Для полного курса нужны архитектура компьютеров и уверенное программирование.",
+    "limit": "Покрывает вводные сети частично; лабораторные и расчёты UT остаются основой. Серия видеолекций этого выпуска не обнаружена.",
+    "links": [
+      [
+        "Курс",
+        "https://ocw.mit.edu/courses/6-033-computer-system-engineering-spring-2018/"
+      ],
+      [
+        "Сетевая архитектура",
+        "https://ocw.mit.edu/courses/6-033-computer-system-engineering-spring-2018/pages/week-5/lecture-8-outline/"
+      ],
+      [
+        "DNS assignment",
+        "https://ocw.mit.edu/courses/6-033-computer-system-engineering-spring-2018/pages/week-2/domain-name-system-dns-assignment/"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "Selected sections",
+        "format": "Notes + written assignments",
+        "description": "Network and system abstractions, operating systems, security and architectural trade-offs. Networking I–III and the DNS assignment are useful for M3.",
+        "use": "Use the networking chapters as supporting explanations. Return later for operating systems and the design project.",
+        "prereq": "The full course requires computer architecture and confident programming.",
+        "limit": "Only a partial match for introductory networking; UT labs and calculations remain essential. No lecture-video series was found for this edition.",
+        "linkLabels": [
+          "Course",
+          "Network architecture",
+          "DNS assignment"
+        ]
+      },
+      "et": {
+        "role": "Valitud jaotised",
+        "format": "Konspektid + kirjalikud ülesanded",
+        "description": "Võrkude ja süsteemide abstraktsioonid, operatsioonisüsteemid, turvalisus ning arhitektuurilised kompromissid. M3 jaoks sobivad Networking I–III ja DNS-i ülesanne.",
+        "use": "Kasuta võrguteemalisi peatükke lisaselgitustena. Hiljem pöördu tagasi operatsioonisüsteemide ja disainiprojekti juurde.",
+        "prereq": "Tervikkursus eeldab arvutiarhitektuuri tundmist ja kindlat programmeerimisoskust.",
+        "limit": "Kattub sissejuhatava võrgukursusega osaliselt; UT laborid ja arvutused jäävad oluliseks. Selle versiooni loenguvideote sarja ei leitud.",
+        "linkLabels": [
+          "Kursus",
+          "Võrguarhitektuur",
+          "DNS-i ülesanne"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mit-6041",
+    "school": "MIT",
+    "code": "6.041SC",
+    "name": "Probabilistic Systems Analysis",
+    "edition": "Fall 2013",
+    "modules": [
+      4,
+      6
+    ],
+    "role": "Вероятность → статистика",
+    "priority": "core",
+    "format": "Видео + задачи + решения",
+    "description": "Вероятностные модели, условная вероятность, случайные величины. Позднее — оценивание и проверка гипотез для статистики M6.",
+    "use": "Начни с дискретных моделей и условной вероятности. К Unit IV переходи после вероятностной базы.",
+    "prereq": "Для полного курса нужен calculus, включая многомерное интегрирование. Начальные дискретные темы доступны раньше.",
+    "limit": "Наличие статистического блока не подтверждает полное совпадение с практикумом UT.",
+    "links": [
+      [
+        "Курс",
+        "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+      ],
+      [
+        "Первое занятие",
+        "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/pages/unit-i/lecture-1/"
+      ],
+      [
+        "Задачи PS1",
+        "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/resources/mit6_041scf13_assn01/"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "Probability → statistics",
+        "format": "Videos + problems + solutions",
+        "description": "Probability models, conditional probability and random variables. Later sections cover estimation and hypothesis testing for M6 statistics.",
+        "use": "Start with discrete models and conditional probability. Move to Unit IV after building a probability foundation.",
+        "prereq": "The full course requires calculus, including multivariable integration. Introductory discrete topics can be studied earlier.",
+        "limit": "The statistics section does not establish a complete match with the UT practical course.",
+        "linkLabels": [
+          "Course",
+          "First session",
+          "PS1 problems"
+        ]
+      },
+      "et": {
+        "role": "Tõenäosus → statistika",
+        "format": "Videod + ülesanded + lahendused",
+        "description": "Tõenäosusmudelid, tinglik tõenäosus ja juhuslikud suurused. Hilisemad osad käsitlevad hindamist ja hüpoteeside kontrolli M6 statistika jaoks.",
+        "use": "Alusta diskreetsetest mudelitest ja tinglikust tõenäosusest. Liigu IV osa juurde pärast tõenäosusteooria aluste omandamist.",
+        "prereq": "Tervikkursus nõuab matemaatilist analüüsi, sealhulgas mitme muutuja integreerimist. Sissejuhatavaid diskreetseid teemasid saab õppida varem.",
+        "limit": "Statistikaosa olemasolu ei kinnita täielikku kattuvust UT praktikumiga.",
+        "linkLabels": [
+          "Kursus",
+          "Esimene tund",
+          "PS1 ülesanded"
+        ]
+      }
+    }
+  },
+  {
+    "id": "cmu-15445",
+    "school": "CMU",
+    "code": "15-445",
+    "name": "Introduction to Database Systems",
+    "edition": "Fall 2025",
+    "modules": [
+      4,
+      8
+    ],
+    "role": "Сначала SQL",
+    "priority": "core",
+    "format": "Видео + задания",
+    "description": "Реляционная модель, SQL, индексы, транзакции и устройство СУБД. На первом курсе начни с лекций 1–2 и SQL homework.",
+    "use": "После лекций о реляционной модели и SQL выполни Homework 1 на DuckDB. Проекты движка BusTub на C++ оставь на более поздний этап.",
+    "prereq": "Для выбранных первых тем — основы программирования. Для полного курса и проектов нужны структуры данных и системное программирование.",
+    "limit": "На сайте опубликованы ссылки на решения домашних работ. Среда, датасет и автопроверка в этой проверке не запускались.",
+    "links": [
+      [
+        "Лекции и материалы",
+        "https://15445.courses.cs.cmu.edu/fall2025/schedule.html"
+      ],
+      [
+        "SQL homework",
+        "https://15445.courses.cs.cmu.edu/fall2025/homework1/"
+      ],
+      [
+        "Задания и решения",
+        "https://15445.courses.cs.cmu.edu/fall2025/assignments.html"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "Start with SQL",
+        "format": "Videos + assignments",
+        "description": "Relational models, SQL, indexes, transactions and database internals. In your first year, start with lectures 1–2 and the SQL homework.",
+        "use": "After the relational-model and SQL lectures, do Homework 1 in DuckDB. Leave the C++ BusTub database-engine projects until later.",
+        "prereq": "Basic programming for the selected introductory topics. The full course and projects need data structures and systems programming.",
+        "limit": "The site links to homework solutions. The environment, dataset and autograder have not been run in this review.",
+        "linkLabels": [
+          "Lectures and materials",
+          "SQL homework",
+          "Assignments and solutions"
+        ]
+      },
+      "et": {
+        "role": "Alusta SQL-ist",
+        "format": "Videod + ülesanded",
+        "description": "Relatsiooniline mudel, SQL, indeksid, transaktsioonid ja andmebaasisüsteemide siseehitus. Esimesel aastal alusta loengutest 1–2 ning SQL-i kodutööst.",
+        "use": "Pärast relatsioonilise mudeli ja SQL-i loenguid tee Homework 1 DuckDB-s. C++-is tehtavad BusTubi andmebaasimootori projektid jäta hilisemaks.",
+        "prereq": "Valitud sissejuhatavate teemade jaoks piisab programmeerimise alustest. Tervikkursus ja projektid nõuavad andmestruktuure ning süsteemset programmeerimist.",
+        "limit": "Veebilehel on lingid kodutööde lahendustele. Selle kontrolli käigus ei käivitatud õppekeskkonda, andmestikku ega automaatkontrolli.",
+        "linkLabels": [
+          "Loengud ja materjalid",
+          "SQL-i kodutöö",
+          "Ülesanded ja lahendused"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mit-6004",
+    "school": "MIT",
+    "code": "6.004",
+    "name": "Computation Structures",
+    "edition": "Spring 2017",
+    "modules": [
+      5
+    ],
+    "role": "Архитектура",
+    "priority": "core",
+    "format": "Видео + worksheets + ответы",
+    "description": "От цифровой логики и автоматов к инструкциям процессора, памяти и кэшам. Помогает связать hardware и выполнение программы.",
+    "use": "Сопоставляй главы с Computer Architecture and Organisation в M5. Решай worksheets после каждого раздела.",
+    "prereq": "Базовое программирование; формальный prerequisite MIT — 8.02.",
+    "limit": "Учебная архитектура Beta. Все лабораторные среды и симуляторы не проверены запуском.",
+    "links": [
+      [
+        "Курс",
+        "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+      ],
+      [
+        "Первая тема",
+        "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c1/c1s1/"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "Computer architecture",
+        "format": "Videos + worksheets + answers",
+        "description": "From digital logic and state machines to processor instructions, memory and caches. Connect hardware to program execution.",
+        "use": "Match chapters to Computer Architecture and Organisation in M5. Work through the worksheets after each section.",
+        "prereq": "Basic programming; MIT formally lists 8.02 as a prerequisite.",
+        "limit": "Uses the educational Beta architecture. Not all lab environments and simulators have been checked by running them.",
+        "linkLabels": [
+          "Course",
+          "First topic"
+        ]
+      },
+      "et": {
+        "role": "Arvutiarhitektuur",
+        "format": "Videod + töölehed + vastused",
+        "description": "Digitaalloogikast ja lõplikest automaatidest protsessori käskude, mälu ja vahemäludeni. Aitab siduda riistvara programmi täitmisega.",
+        "use": "Seo peatükid M5 ainega Computer Architecture and Organisation. Lahenda iga osa järel töölehe ülesanded.",
+        "prereq": "Programmeerimise alused; MIT ametlik eeldusaine on 8.02.",
+        "limit": "Kasutatakse õppeotstarbelist Beta arhitektuuri. Kõiki laborikeskkondi ja simulaatoreid ei ole käivitades kontrollitud.",
+        "linkLabels": [
+          "Kursus",
+          "Esimene teema"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mit-1806",
+    "school": "MIT",
+    "code": "18.06SC",
+    "name": "Linear Algebra",
+    "edition": "Fall 2011 · Gilbert Strang",
+    "modules": [
+      5
+    ],
+    "role": "Математика для систем и ML",
+    "priority": "core",
+    "format": "Видео + задачи + решения",
+    "description": "Системы уравнений, пространства, базисы, проекции и собственные значения. Лекции Strang дополняются задачами и разборами.",
+    "use": "После каждого занятия решай связанные упражнения. Пытайся объяснять геометрический смысл матричных операций.",
+    "prereq": "Школьная алгебра, векторы и координаты. Calculus не нужен для начала изучения линейной алгебры.",
+    "limit": "Линейная алгебра не заменяет курс абстрактной алгебры групп и полей.",
+    "links": [
+      [
+        "Курс",
+        "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/"
+      ],
+      [
+        "Геометрия систем уравнений",
+        "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/ax-b-and-the-four-subspaces/the-geometry-of-linear-equations/"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "Mathematics for systems and ML",
+        "format": "Videos + problems + solutions",
+        "description": "Linear systems, vector spaces, bases, projections and eigenvalues. Gilbert Strang’s lectures are accompanied by problems and worked solutions.",
+        "use": "Solve the associated exercises after each session. Explain the geometric meaning of matrix operations.",
+        "prereq": "School algebra, vectors and coordinates. Calculus is not needed to start learning linear algebra.",
+        "limit": "Linear algebra does not replace abstract algebra on groups and fields.",
+        "linkLabels": [
+          "Course",
+          "Geometry of linear equations"
+        ]
+      },
+      "et": {
+        "role": "Matemaatika süsteemidele ja masinõppele",
+        "format": "Videod + ülesanded + lahendused",
+        "description": "Lineaarvõrrandisüsteemid, vektorruumid, baasid, projektsioonid ja omaväärtused. Gilbert Strangi loenguid täiendavad ülesanded ning lahendused.",
+        "use": "Lahenda iga tunni juurde kuuluvad ülesanded. Püüa selgitada maatriksitehete geomeetrilist tähendust.",
+        "prereq": "Koolialgebra, vektorid ja koordinaadid. Lineaaralgebra õppimise alustamiseks pole analüüsi vaja.",
+        "limit": "Lineaaralgebra ei asenda rühmi ja korpusi käsitlevat abstraktset algebrat.",
+        "linkLabels": [
+          "Kursus",
+          "Lineaarvõrrandite geomeetria"
+        ]
+      }
+    }
+  },
+  {
+    "id": "cmu-15213",
+    "school": "CMU",
+    "code": "15-213",
+    "name": "Introduction to Computer Systems",
+    "edition": "Course site + CS:APP self-study",
+    "modules": [
+      5,
+      8
+    ],
+    "role": "После C и указателей",
+    "priority": "core",
+    "format": "Материалы + self-study labs",
+    "description": "Программистский взгляд на машинный код, память, процессы, I/O и параллелизм. Практика помогает понять, что происходит под кодом.",
+    "use": "Бери после C и уверенной работы с указателями. Начни с представления данных, затем переходи к машинному коду и памяти.",
+    "prereq": "C, указатели и базовые структуры данных. Официальный prerequisite — 15-122.",
+    "limit": "Часть лабораторных требует Linux/x86-64; Cache Lab прямо требует x86-64. Готовые решения labs предоставляются преподавателям. Это не полный курс реализации ядра ОС.",
+    "links": [
+      [
+        "Курс",
+        "https://www.cs.cmu.edu/~213/"
+      ],
+      [
+        "Self-study labs",
+        "https://csapp.cs.cmu.edu/3e/labs.html"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "After C and pointers",
+        "format": "Materials + self-study labs",
+        "description": "A programmer’s view of machine code, memory, processes, I/O and concurrency. Practical work explains what happens beneath your code.",
+        "use": "Start after learning C and becoming comfortable with pointers. Begin with data representation, then machine code and memory.",
+        "prereq": "C, pointers and basic data structures. The official prerequisite is 15-122.",
+        "limit": "Some labs require Linux/x86-64; Cache Lab explicitly requires x86-64. Lab solutions are provided to instructors. This is not a complete course in implementing an OS kernel.",
+        "linkLabels": [
+          "Course",
+          "Self-study labs"
+        ]
+      },
+      "et": {
+        "role": "Pärast C-d ja viitasid",
+        "format": "Materjalid + iseseisvad laborid",
+        "description": "Programmeerija vaade masinkoodile, mälule, protsessidele, sisendile-väljundile ja rööpsusele. Praktiline töö selgitab, mis toimub koodi all.",
+        "use": "Alusta pärast C õppimist ja viitadega harjumist. Esmalt andmete esitus, seejärel masinkood ja mälu.",
+        "prereq": "C, viidad ja põhilised andmestruktuurid. Ametlik eeldusaine on 15-122.",
+        "limit": "Osa laboreid nõuab Linuxit/x86-64; Cache Lab nõuab selgesõnaliselt x86-64. Laborite lahendused antakse õppejõududele. See pole täielik operatsioonisüsteemi tuuma teostamise kursus.",
+        "linkLabels": [
+          "Kursus",
+          "Iseseisvad laborid"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mit-6036",
+    "school": "MIT",
+    "code": "6.036",
+    "name": "Introduction to Machine Learning",
+    "edition": "Fall 2020",
+    "modules": [
+      6
+    ],
+    "role": "После математической базы",
+    "priority": "core",
+    "format": "Видео + текст · OLL",
+    "description": "Постановка ML-задач, обобщение, линейные модели, нейросети и reinforcement learning.",
+    "use": "Начинай после Python, линейной алгебры и calculus. Проверяй понимание на задачах, а не только по просмотрам.",
+    "prereq": "Python, calculus и linear algebra. Вероятность помогает понимать оценку моделей.",
+    "limit": "Проверенные Homework 1 и self-assessment требуют входа и enrolment. Доступность заданий и автопроверки после входа не подтверждена. Классический AI покрыт не целиком.",
+    "links": [
+      [
+        "Курс",
+        "https://ocw.mit.edu/courses/6-036-introduction-to-machine-learning-fall-2020/"
+      ],
+      [
+        "Самостоятельная версия",
+        "https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/about"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "After the mathematics foundation",
+        "format": "Videos + text · OLL",
+        "description": "Framing machine-learning problems, generalisation, linear models, neural networks and reinforcement learning.",
+        "use": "Start after Python, linear algebra and calculus. Check your understanding by solving problems, not just watching lectures.",
+        "prereq": "Python, calculus and linear algebra. Probability helps with model evaluation.",
+        "limit": "The checked Homework 1 and self-assessment pages require sign-in and enrolment. Assignment and autograder access after sign-in is unverified. Classical AI is not fully covered.",
+        "linkLabels": [
+          "Course",
+          "Self-paced version"
+        ]
+      },
+      "et": {
+        "role": "Pärast matemaatika aluseid",
+        "format": "Videod + tekst · OLL",
+        "description": "Masinõppeülesannete püstitamine, üldistusvõime, lineaarsed mudelid, närvivõrgud ja stiimulõpe.",
+        "use": "Alusta pärast Pythonit, lineaaralgebrat ja analüüsi. Kontrolli arusaamist ülesannete lahendamisega, mitte ainult loengute vaatamisega.",
+        "prereq": "Python, matemaatiline analüüs ja lineaaralgebra. Tõenäosusteooria aitab mõista mudelite hindamist.",
+        "limit": "Kontrollitud Homework 1 ja enesetesti lehed nõuavad sisselogimist ning kursusele registreerumist. Ligipääs ülesannetele ja automaatkontrollile pärast sisselogimist pole kinnitatud. Klassikaline tehisintellekt ei ole täielikult kaetud.",
+        "linkLabels": [
+          "Kursus",
+          "Iseseisva õppe versioon"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mit-6813",
+    "school": "MIT",
+    "code": "6.813 / 6.831",
+    "name": "User Interface Design and Implementation",
+    "edition": "Spring 2011",
+    "modules": [
+      6,
+      8,
+      11
+    ],
+    "role": "Бакалаврская ветка 6.813",
+    "priority": "core",
+    "format": "Конспекты + проект",
+    "description": "Usability, анализ задач, прототипы и пользовательское тестирование. Подходит к UX и проектированию интерактивных систем UT.",
+    "use": "Начни с HW1: сравни хороший и плохой интерфейс. Для проекта используй этапы GR1–GR6.",
+    "prereq": "Для полного курса MIT указывает Software Construction. Анализ интерфейса можно делать до реализации.",
+    "limit": "Видео в этом выпуске нет. Решения HW/PS не обнаружены. Старые заготовки интерфейсов могут требовать обновления.",
+    "links": [
+      [
+        "Курс",
+        "https://ocw.mit.edu/courses/6-831-user-interface-design-and-implementation-spring-2011/"
+      ],
+      [
+        "Этапы проекта",
+        "https://ocw.mit.edu/courses/6-831-user-interface-design-and-implementation-spring-2011/pages/projects/"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "Undergraduate track 6.813",
+        "format": "Notes + project",
+        "description": "Usability, task analysis, prototyping and user testing. Supports UX and interactive-system design at UT.",
+        "use": "Start with HW1: compare a good and a poor interface. Use the GR1–GR6 stages for a project.",
+        "prereq": "MIT lists Software Construction for the full course. Interface analysis can begin before implementation.",
+        "limit": "This edition has no videos. No HW/PS solutions were found. Older interface starter files may need updating.",
+        "linkLabels": [
+          "Course",
+          "Project stages"
+        ]
+      },
+      "et": {
+        "role": "Bakalaureuseõppe haru 6.813",
+        "format": "Konspektid + projekt",
+        "description": "Kasutatavus, ülesannete analüüs, prototüübid ja kasutajatestid. Täiendab UT UX-i ja interaktiivsete süsteemide disaini.",
+        "use": "Alusta HW1-st: võrdle head ja halba kasutajaliidest. Projekti jaoks kasuta etappe GR1–GR6.",
+        "prereq": "Tervikkursuse eeldusena nimetab MIT ainet Software Construction. Liidese analüüsi saab teha enne teostamist.",
+        "limit": "Selles versioonis videoid pole. HW/PS lahendusi ei leitud. Vanad kasutajaliidese failipõhjad võivad vajada uuendamist.",
+        "linkLabels": [
+          "Kursus",
+          "Projekti etapid"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mit-6006",
+    "school": "MIT",
+    "code": "6.006",
+    "name": "Introduction to Algorithms",
+    "edition": "Fall 2011",
+    "modules": [
+      7
+    ],
+    "role": "После дискретной математики",
+    "priority": "core",
+    "format": "Видео + задачи + решения",
+    "description": "Сортировки, хеширование, деревья, графы, кратчайшие пути и динамическое программирование. Сильное дополнение к алгоритмам M7.",
+    "use": "Разбирай корректность и сложность до программирования. Начальная тема — Peak Finding; затем PS1.",
+    "prereq": "Уверенное программирование на Python и дискретная математика уровня 6.042J.",
+    "limit": "Программные стартеры этого выпуска используют Python 2.7. Совместимость с современным Python не проверена. Курс не заменяет формальные языки и вычислимость.",
+    "links": [
+      [
+        "Курс",
+        "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+      ],
+      [
+        "Задания и решения",
+        "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/pages/assignments/"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "After discrete mathematics",
+        "format": "Videos + problems + solutions",
+        "description": "Sorting, hashing, trees, graphs, shortest paths and dynamic programming. A substantial supplement to M7 algorithms.",
+        "use": "Analyse correctness and complexity before implementation. Start with Peak Finding, then PS1.",
+        "prereq": "Confident Python programming and discrete mathematics at the level of 6.042J.",
+        "limit": "This edition’s starter code uses Python 2.7. Compatibility with modern Python is unverified. The course does not replace formal languages and computability.",
+        "linkLabels": [
+          "Course",
+          "Assignments and solutions"
+        ]
+      },
+      "et": {
+        "role": "Pärast diskreetset matemaatikat",
+        "format": "Videod + ülesanded + lahendused",
+        "description": "Sortimine, paiskamine, puud, graafid, lühimad teed ja dünaamiline programmeerimine. Põhjalik täiendus M7 algoritmidele.",
+        "use": "Analüüsi enne teostamist korrektsust ja keerukust. Alusta teemast Peak Finding, seejärel PS1.",
+        "prereq": "Kindel Pythoni oskus ja diskreetne matemaatika kursuse 6.042J tasemel.",
+        "limit": "Selle versiooni failipõhjad kasutavad Python 2.7-t. Ühilduvus tänapäevase Pythoniga pole kontrollitud. Kursus ei asenda formaalseid keeli ja arvutatavust.",
+        "linkLabels": [
+          "Kursus",
+          "Ülesanded ja lahendused"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mit-60001",
+    "school": "MIT",
+    "code": "6.0001",
+    "name": "Introduction to CS and Programming in Python",
+    "edition": "Fall 2016",
+    "modules": [
+      1,
+      2
+    ],
+    "role": "Если нужна база программирования",
+    "priority": "reserve",
+    "format": "Видео + задачи",
+    "description": "Функции, циклы, рекурсия, коллекции, классы и первые оценки сложности. Используй для конкретных пробелов.",
+    "use": "Если базовые конструкции уже уверенные, пропусти. Для практики на состояние и цикл подходит PS1: House Hunting.",
+    "prereq": "Можно начинать без опыта программирования.",
+    "limit": "Python может отличаться от языка UT. Решений домашних работ нет; старые инструкции установки не проверены.",
+    "links": [
+      [
+        "Курс",
+        "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/"
+      ],
+      [
+        "Задания",
+        "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/pages/assignments/"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "If you need programming basics",
+        "format": "Videos + problems",
+        "description": "Functions, loops, recursion, collections, classes and first complexity estimates. Use it to address specific gaps.",
+        "use": "Skip it if the basic constructs are already familiar. PS1: House Hunting is useful practice for state and loops.",
+        "prereq": "No prior programming experience is needed.",
+        "limit": "Python may differ from the UT course language. Homework solutions are not published; older installation instructions are unverified.",
+        "linkLabels": [
+          "Course",
+          "Assignments"
+        ]
+      },
+      "et": {
+        "role": "Kui vajad programmeerimise aluseid",
+        "format": "Videod + ülesanded",
+        "description": "Funktsioonid, tsüklid, rekursioon, kollektsioonid, klassid ja esimesed keerukushinnangud. Kasuta konkreetsete lünkade täitmiseks.",
+        "use": "Kui põhikonstruktsioonid on selged, jäta vahele. PS1: House Hunting sobib oleku ja tsüklite harjutamiseks.",
+        "prereq": "Varasemat programmeerimiskogemust ei nõuta.",
+        "limit": "Python võib erineda UT kursuse keelest. Kodutööde lahendusi pole avaldatud; vanu paigaldusjuhiseid ei ole kontrollitud.",
+        "linkLabels": [
+          "Kursus",
+          "Ülesanded"
+        ]
+      }
+    }
+  },
+  {
+    "id": "cmu-15110",
+    "school": "CMU",
+    "code": "15-110",
+    "name": "Principles of Computing",
+    "edition": "CS Learn · запуск ноябрь 2026",
+    "modules": [
+      1,
+      2
+    ],
+    "role": "Вводный резерв",
+    "priority": "reserve",
+    "format": "Новые видеолекции",
+    "description": "Вводный курс вычислений и программирования. Полезен для повторения конкретной базовой темы.",
+    "use": "Выбирай вместо вводного MIT 6.0001, если объяснение CMU подходит лучше. Проходить оба целиком не требуется.",
+    "prereq": "Подходит для начала изучения программирования.",
+    "limit": "CMU Learn помечает курс Watch now. Полнота плейлиста и новая самостоятельная платформа с заданиями не подтверждены.",
+    "links": [
+      [
+        "CMU Learn",
+        "https://www.cs.cmu.edu/learn/"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "Introductory alternative",
+        "format": "New lecture videos",
+        "description": "An introductory computing and programming course. Useful for reviewing a specific foundational topic.",
+        "use": "Choose this instead of introductory MIT 6.0001 if CMU’s explanation suits you better. Completing both in full is unnecessary.",
+        "prereq": "Suitable for beginning programmers.",
+        "limit": "CMU Learn marks the course Watch now. Playlist completeness and the new self-paced assignment platform are unverified.",
+        "linkLabels": [
+          "CMU Learn"
+        ],
+        "edition": "CS Learn · launch November 2026"
+      },
+      "et": {
+        "role": "Sissejuhatav alternatiiv",
+        "format": "Uued loenguvideod",
+        "description": "Sissejuhatav arvutiteaduse ja programmeerimise kursus. Sobib konkreetse baasteema kordamiseks.",
+        "use": "Vali see MIT sissejuhatava kursuse 6.0001 asemel, kui CMU selgitused sobivad paremini. Mõlemat pole vaja tervikuna läbida.",
+        "prereq": "Sobib programmeerimisega alustamiseks.",
+        "limit": "CMU Learn märgib kursuse olekuks Watch now. Playlisti täielikkus ja uus iseseisvate ülesannete platvorm pole kinnitatud.",
+        "linkLabels": [
+          "CMU Learn"
+        ],
+        "edition": "CS Learn · avamine novembris 2026"
+      }
+    }
+  },
+  {
+    "id": "mit-6031",
+    "school": "MIT",
+    "code": "6.031",
+    "name": "Software Construction",
+    "edition": "Spring 2022 · TypeScript",
+    "modules": [
+      2,
+      4,
+      8
+    ],
+    "role": "Альтернатива CMU 17-214",
+    "priority": "reserve",
+    "format": "Чтение + упражнения",
+    "description": "Спецификации, тестирование, абстрактные типы данных, инварианты, интерфейсы и параллелизм.",
+    "use": "Выбирай как основной ресурс вместо 17-214, если подходит TypeScript и текстовый формат. Первое чтение — Testing.",
+    "prereq": "Уверенное программирование; MIT требует подготовку уровня 6.009.",
+    "limit": "Серия видеолекций не обнаружена. Получение исходной заготовки PS1 связано с Didit и MIT GitHub; внешний workflow не подтверждён.",
+    "links": [
+      [
+        "Курс",
+        "https://web.mit.edu/6.031/www/sp22/"
+      ],
+      [
+        "Testing",
+        "https://web.mit.edu/6.031/www/sp22/classes/03-testing/"
+      ],
+      [
+        "PS1: Flashcards",
+        "https://web.mit.edu/6.031/www/sp22/psets/ps1/"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "Alternative to CMU 17-214",
+        "format": "Readings + exercises",
+        "description": "Specifications, testing, abstract data types, invariants, interfaces and concurrency.",
+        "use": "Use this as your main resource instead of 17-214 if you prefer TypeScript and written material. Start with Testing.",
+        "prereq": "Confident programming; MIT requires preparation at the level of 6.009.",
+        "limit": "No lecture-video series was found. Getting the original PS1 starter involves Didit and MIT GitHub; the external workflow is unverified.",
+        "linkLabels": [
+          "Course",
+          "Testing",
+          "PS1: Flashcards"
+        ]
+      },
+      "et": {
+        "role": "Alternatiiv CMU kursusele 17-214",
+        "format": "Lugemine + harjutused",
+        "description": "Spetsifikatsioonid, testimine, abstraktsed andmetüübid, invariandid, liidesed ja rööpsus.",
+        "use": "Vali põhiallikaks 17-214 asemel, kui sobivad TypeScript ja tekstimaterjalid. Alusta teemast Testing.",
+        "prereq": "Kindel programmeerimisoskus; MIT nõuab ettevalmistust kursuse 6.009 tasemel.",
+        "limit": "Loenguvideote sarja ei leitud. Algse PS1 failipõhja saamine on seotud Diditi ja MIT GitHubiga; väline töövoog pole kinnitatud.",
+        "linkLabels": [
+          "Kursus",
+          "Testimine",
+          "PS1: Flashcards"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mit-6830",
+    "school": "MIT",
+    "code": "6.830 / 6.814",
+    "name": "Database Systems",
+    "edition": "Fall 2010 · SimpleDB / Java",
+    "modules": [
+      4,
+      8
+    ],
+    "role": "Углубление позже",
+    "priority": "reserve",
+    "format": "Конспекты + лабораторные",
+    "description": "Устройство СУБД и реализация частей SimpleDB на Java. Выбирай после систем и алгоритмов.",
+    "use": "Для вводного M4 предпочтительнее первые темы CMU 15-445. Сюда возвращайся ради Java-проекта движка.",
+    "prereq": "Подготовка уровня MIT 6.033 и 6.006, Java.",
+    "limit": "Видео нет; конспекты выборочные; комплект problem sets неполон. Сборка старых архивов не проверена.",
+    "links": [
+      [
+        "Курс",
+        "https://ocw.mit.edu/courses/6-830-database-systems-fall-2010/"
+      ],
+      [
+        "Задания",
+        "https://ocw.mit.edu/courses/6-830-database-systems-fall-2010/pages/assignments/"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "Deeper study later",
+        "format": "Notes + labs",
+        "description": "Database internals and implementation of parts of SimpleDB in Java. Choose it after systems and algorithms.",
+        "use": "For introductory M4, prefer the first CMU 15-445 topics. Return here for a Java database-engine project.",
+        "prereq": "Preparation at the level of MIT 6.033 and 6.006, plus Java.",
+        "limit": "No videos; notes are selective and the published problem-set collection is incomplete. Building the older archives has not been tested.",
+        "linkLabels": [
+          "Course",
+          "Assignments"
+        ]
+      },
+      "et": {
+        "role": "Põhjalikum õpe hiljem",
+        "format": "Konspektid + laborid",
+        "description": "Andmebaasisüsteemide siseehitus ja SimpleDB osade teostamine Javas. Vali pärast süsteeme ja algoritme.",
+        "use": "Sissejuhatava M4 jaoks eelista CMU 15-445 esimesi teemasid. Tule siia tagasi Java andmebaasimootori projekti jaoks.",
+        "prereq": "Ettevalmistus MIT kursuste 6.033 ja 6.006 tasemel ning Java.",
+        "limit": "Videoid pole; konspektid on valikulised ja avaldatud ülesandekomplekt on puudulik. Vanade arhiivide kompileerimist ei ole proovitud.",
+        "linkLabels": [
+          "Kursus",
+          "Ülesanded"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mit-6045",
+    "school": "MIT",
+    "code": "6.045J",
+    "name": "Automata, Computability, and Complexity",
+    "edition": "Spring 2011",
+    "modules": [
+      7
+    ],
+    "role": "Отдельная теория вычислений",
+    "priority": "reserve",
+    "format": "Теоретический курс",
+    "description": "Конечные автоматы, машины Тьюринга, вычислимость, сводимости и сложность. Ориентир для Languages and Machines.",
+    "use": "Сверь темы с UT: этот блок не заменяется алгоритмами 6.006 или прикладными парсерами 6.031.",
+    "prereq": "Дискретная математика и уверенное чтение доказательств.",
+    "limit": "Содержание курса проверено; полный аудит его заданий и решений не проводился.",
+    "links": [
+      [
+        "Курс",
+        "https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/"
+      ]
+    ],
+    "translations": {
+      "en": {
+        "role": "Separate theory-of-computation track",
+        "format": "Theory course",
+        "description": "Finite automata, Turing machines, computability, reductions and complexity. A reference for Languages and Machines.",
+        "use": "Compare topics with UT: this area is not replaced by 6.006 algorithms or the applied parsers in 6.031.",
+        "prereq": "Discrete mathematics and confidence reading proofs.",
+        "limit": "Course topics were checked; a full review of assignments and solutions was not performed.",
+        "linkLabels": [
+          "Course"
+        ]
+      },
+      "et": {
+        "role": "Eraldi arvutusteooria suund",
+        "format": "Teooriakursus",
+        "description": "Lõplikud automaadid, Turingi masinad, arvutatavus, taandamised ja keerukus. Orientiir ainele Languages and Machines.",
+        "use": "Võrdle teemasid UT-ga: seda valdkonda ei asenda 6.006 algoritmid ega 6.031 praktilised parserid.",
+        "prereq": "Diskreetne matemaatika ja kindlus tõestuste lugemisel.",
+        "limit": "Kursuse teemad kontrolliti; ülesannete ja lahenduste täielikku ülevaatust ei tehtud.",
+        "linkLabels": [
+          "Kursus"
+        ]
+      }
+    }
+  }
 ]
